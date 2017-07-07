@@ -46,6 +46,15 @@ app.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
         controller: 'SettingsCtrl'
     });
 
+
+    $stateProvider.state('profil', {
+        url: '/profil',
+        templateUrl: 'app/components/profil/profil.html',
+        controller: 'ProfilCtrl',
+        params: {}
+    });
+
+
     // ROUTES NON PROTEGEES
     $stateProvider.state('loginRoot', {
         url: '',

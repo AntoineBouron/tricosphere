@@ -11,7 +11,8 @@ var app = angular.module("tricosphere", [
 
 app.run(function($rootScope, $state) {
     $rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
-        $rootScope.prevPageLink = from.url;
+        console.log(from);
+        $rootScope.prevState = from.name;
     });
 });
 

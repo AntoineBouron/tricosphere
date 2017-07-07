@@ -108,8 +108,8 @@
     }
     .wrap {
         top: var(--mobileTitleHeight);
-        margin-bottom: 50px;
-        margin-top: 20px;
+        margin: 20px 5px 50px 5px !important;
+        width: auto !important;
     }
     #mobileTitle {
         height: var(--mobileTitleHeight);
@@ -141,7 +141,8 @@
     font-size: 0.55em !important;
     color: black !important;
     text-decoration: none;
-    padding: 0 0px 0 0px;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .itemMenuBottom a {

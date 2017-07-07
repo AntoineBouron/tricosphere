@@ -1,9 +1,11 @@
 angular
     .module('tricosphere')
-    .controller('404Ctrl', function($scope, auth) {
-        /*auth.linkOnUrlNotFound().then(function(data) {
-            console.log(data);
-        }, function(data) {
-            
-        });*/
+    .controller('404Ctrl', function($scope, $state, $rootScope, auth) {
+    	
+    	auth.init();
+
+    	$scope.redirectLink = function(previousState) {
+    		$state.go($rootScope.prevState);
+    	};
+
     });

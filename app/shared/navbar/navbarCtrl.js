@@ -7,8 +7,7 @@ angular
             $state.go('login', {msgOk: 'Vous avez bien été déconnecté'});
         };
 
-        $scope.menuItems = {
-            data: [
+        $scope.menuItems =  [
                 {
                     text: "Merceries",
                     link: "#!/merceries",
@@ -24,17 +23,21 @@ angular
                     link: "#!/community",
                     icon: "users"
                 },
-                {
+/*                {
                     text: "Réglages",
                     link: "#!/settings",
                     icon: "cogs"
+                },*/
+                {
+                    text: "Profil",
+                    link: "#!/profil",
+                    icon: "user"
                 },
                 {
                     text: "Admin",
                     link: "#!/admin",
                     icon: "lock"
                 }
-            ]
-        };
+            ];
 
     });
