@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row align-items-center justify-content-center h100">
+        <div class="col-sm-12 col-md-6">
+            <div class="alert alert-danger" role="alert" ng-show="msgErr">
+                <strong>{{msgErr}}</strong>
+            </div>
+            <div class="alert alert-success" role="alert" ng-show="msgOk">
+                <strong>{{msgOk}}</strong>
+            </div>
+            <h2 class="card-title" id="loginTitle">Tricosphere</h2>
+            <form name="formLogin">
+                <fieldset class="form-group ">
+                    <label for="formLoginId ">Identifiant</label>
+                    <input type="email " class="form-control " id="formLoginId " placeholder="Identifiant ou email" ng-model="formLogin.data.email">
+                </fieldset>
+                <fieldset class="form-group ">
+                    <label for="formLoginPwd ">Mot de passe</label>
+                    <input type="password " class="form-control " id="formLoginPwd " placeholder="Mot de passe" ng-model="formLogin.data.pwd">
+                </fieldset>
+                <button ng-click="doLogin() " type="button " class="btn btn-outline-primary btn-md btn-block ">Se connecter</button>
+                <a href="#!/signup" type="button " class="btn btn-block btn-sm btn-outline- primary" aria-pressed="true">
+                    Créer un compte
+                </a>
+                <a href="#!/resetPassword" type="button " class="btn btn-block btn-sm btn-outline-secondary" aria-pressed="true">
+                    Mot de passe oublié?
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

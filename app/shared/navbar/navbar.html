@@ -1,0 +1,57 @@
+<nav class="navbar navbar-light bg-faded fixed-top navbar-toggleable-sm" id="menuTop" ng-controller="NavbarCtrl">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#!/home">
+        <h2>Tricosphere</h2>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav d-flex justify-content-start" style="width: 100%;">
+            <li class="nav-item active">
+                <a class="nav-link" href="#!/merceries">
+                    <i class="fa fa-coffee" aria-hidden="true"></i> Merceries
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!/designers">
+                    <i class="fa fa-pencil" aria-hidden="true"></i> Designers
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!/community">Communauté</a>
+            </li>
+            <li class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#!/settings">Paramètres</a>
+                    <a class="dropdown-item" ng-click="doDeconnect()">Deconnexion</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="row fixed-top bg-faded d-flex" id="mobileTitle">
+    <div class="col-2 col-sm-2 text-center align-self-center">
+        <a href="#!{{prevPageLink}}">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="col-10 col-sm-10 text-center align-self-center p-3">
+        Tricosphere
+    </div>
+</div>
+
+<!-- NAVBAR en bas pour les mobiles -->
+<div class="row fixed-bottom bg-faded d-flex justify-content-between" id="menuBottom" ng-controller="NavbarCtrl">
+    <div class="col text-center itemMenuBottom d-flex align-items-center justify-content-center" ng-repeat="menuItem in menuItems.data">
+    <!-- <div class="col-{{menuItems.data.length / 12}} text-center itemMenuBottom" ng-repeat="menuItem in menuItems.data"> -->
+    <a href="{{menuItem.link}}">
+        <i class="fa fa-{{menuItem.icon}}" aria-hidden="true"></i> <br /> {{menuItem.text}}
+    </a>
+    </div>
+</div>

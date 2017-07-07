@@ -1,0 +1,156 @@
+/*  :root {
+    --hauteurBanniere: 100px;
+    --hauteurLogoMobile: 50px;
+    --hauteurLogoDeskTop: 150px;
+    --largeurLogo: 100px;
+    --leftLogo: 5%;
+    --hauteurMenu: 20px;
+    --hauteurTotaleBlockMenu: 150px;
+    bootstrap
+    --smTomd: 576px;
+    --mdTolg: 768px;
+    --lgToelg: 1200px;
+}
+
+#logo {
+    background: url('../assets/img/logo.png') no-repeat;
+    height: var(--hauteurTotaleBlockMenu);
+    padding: 0;
+}
+
+#menu {
+        height: calc(var(--hauteurTotaleBlockMenu) / 2);
+} 
+
+.iconeMenu {
+    display: none !important;
+}
+
+.texteMenu {
+    display: block !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.texteMenu:hover {
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+
+/*  @media screen and (min-width: 576px) {
+   #MENUb {
+       display: none;
+   }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    #logo {
+        height: calc(var(--hauteurTotaleBlockMenu) / 2);
+    }
+    #menu {
+        height: calc(var(--hauteurTotaleBlockMenu) / 4);
+    }
+
+    .iconeMenu {
+        display: block !important;
+    }
+
+    .texteMenu {
+        font-size: 10px;
+    }
+
+   #socialTricosphere {
+       height: calc(var(--hauteurTotaleBlockMenu) / 3);
+       margin-top: calc(-1 * var(--hauteurTotaleBlockMenu) / 2);
+    }
+   
+   .wrap {
+       top: 60px;
+   }
+
+
+
+   #logoJumbotron {
+       display: none;
+   }
+   #containerNav {
+       padding-top: 15px;
+   }
+} */
+
+
+/* UTILITAIRES */
+
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+
+/* NAVBAR */
+
+:root {
+    --mobileTitleHeight: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    #menuTop {
+        display: none;
+    }
+    .wrap {
+        top: var(--mobileTitleHeight);
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    #mobileTitle {
+        height: var(--mobileTitleHeight);
+    }
+    .typeMercerieSearch {
+        font-size: smaller !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menuBottom {
+        display: none !important;
+        background-color: red;
+    }
+    .wrap {
+        top: 130px !important;
+    }
+    #mobileTitle {
+        display: none !important;
+    }
+}
+
+#menuBottom {
+    height: 50px;
+    padding: 0 5px 0 5px;
+}
+
+.itemMenuBottom {
+    font-size: 0.55em !important;
+    color: black !important;
+    text-decoration: none;
+    padding: 0 0px 0 0px;
+}
+
+.itemMenuBottom a {
+    color: black !important;
+}
+
+
+/* MERCERIES */
+
+.card-block {
+    padding: 5px !important;
+}

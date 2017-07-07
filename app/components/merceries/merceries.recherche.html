@@ -1,0 +1,44 @@
+<div ng-include src="'app/shared/navbar/navbar.html'"></div>
+<div class="container wrap w-100">
+    <div class="row">
+        <div class="col-12 col-md-4 d-flex">
+            <form class="w100">
+                <h4>Rechercher la mercerie</h4>
+                <div class="form-group w100">
+                    <div class="btn-group w100">
+                        <label class="btn w100 btn-primary typeMercerieSearch" 
+                        	ng-model="typeRechercheMercerie" 
+                        	uib-btn-radio="'nom'">
+                        		Par nom
+                        </label>
+                        <label class="btn w100 btn-primary typeMercerieSearch" 
+                        	ng-model="typeRechercheMercerie" 
+                        	uib-btn-radio="'ville'">
+                        		Par ville
+                        </label>
+                        <label class="btn w100 btn-primary typeMercerieSearch" 
+                        	ng-model="typeRechercheMercerie" 
+                        	uib-btn-radio="'proche'">
+                        		Proches
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group w100" ng-show="typeRechercheMercerie == 'nom' || typeRechercheMercerie == 'ville'">
+                    <input type="text" class="form-control" id="searchMerceries" placeholder="Recherche par {{typeRechercheMercerie}}" ng-model="XX">
+                </div>
+                <div class="form-group w100">
+                    <button type="button" class="btn btn-primary w100" ng-click="XX">Rechercher</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card" ng-repeat="mercerie in merceries">
+                <div class="card-block">
+                    <h4 class="card-title">{{mercerie.name}}</h4>
+                    <p class="card-text">{{mercerie.description}}</p>
+                    <a href="#!/merceries/details/{{mercerie.id}}" class="card-link">En voir plus!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

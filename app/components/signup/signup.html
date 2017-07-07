@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row align-items-center justify-content-center h100">
+        <div class="col-sm-12 col-md-6">
+            <h2 class="card-title">Créer le compte</h2>
+            <form name="formSignup">
+                <fieldset class="form-group">
+                    <label for="formLoginId">Nom *</label>
+                    <input type="text" class="form-control" placeholder="Nom" ng-model="formSignup.data.lastname">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="formLoginId">Prenom *</label>
+                    <input type="text" class="form-control" placeholder="Prénom" ng-model="formSignup.data.firstname">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="formLoginId">Email *</label>
+                    <input type="email" class="form-control" placeholder="Email" name="toto" ng-model="formSignup.data.email">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="formLoginId">Mot de passe *</label>
+                    <input type="password" class="form-control" placeholder="Mot de passe" name="formSignup.pwd1" ng-model="formSignup.data.pwd1">
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="password" class="form-control" name="formSignup.pwd2" placeholder="Confirmer mot de passe" ng-model="formSignup.data.pwd2">
+                </fieldset>
+                <button ng-click="doSignUp()" type="button" class="btn btn-outline-primary btn-md btn-block">Créer le compte</button>
+                <a href="#!/login" type="button " class="btn btn-block btn-sm btn-outline-secondary ">
+                    Retour
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

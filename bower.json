@@ -1,0 +1,30 @@
+{
+  "name": "tricosphere",
+  "description": "tricosphere",
+  "main": "",
+  "authors": [
+    "antoine bouron"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "a0-angular-storage": "^0.0.15",
+    "angular-jwt": "^0.1.9",
+    "angular-ui-router": "^1.0.4",
+    "jquery": "^3.2.1",
+    "angular": "1.6.4",
+    "bootstrap": "boostrap#v4.0.0-alpha.3",
+    "angular-messages": "^1.6.4",
+    "ngstorage": "^0.3.11",
+    "components-font-awesome": "^4.7.0",
+    "angular-bootstrap": "^2.5.0"
+  }
+}

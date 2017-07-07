@@ -1,0 +1,27 @@
+{
+  "name": "tricosphere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-concat": "^0.1.6",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-html": "^8.4.0",
+    "grunt-serve": "^0.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antoine bouron",
+  "license": "ISC"
+}
