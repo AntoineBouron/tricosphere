@@ -34,7 +34,7 @@ angular
             }
         ];
 
-        $scope.doSearchForMerceries = function() {
+        $scope.doRechercheMerceries = function() {
 
         };
 
