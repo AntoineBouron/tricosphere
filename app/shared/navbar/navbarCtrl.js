@@ -10,33 +10,27 @@ angular
         $scope.menuItems =  [
                 {
                     text: "Merceries",
-                    link: "#!/merceries",
-                    icon: "shopping-basket"
+                    link: "#!/merceries"
                 },
                 {
                     text: "Designers",
-                    link: "#!/designers",
-                    icon: "pencil"
+                    link: "#!/designers"
                 },
                 {
                     text: "Communauté",
-                    link: "#!/community",
-                    icon: "users"
+                    link: "#!/community"
                 },
-/*                {
+                {
                     text: "Réglages",
-                    link: "#!/settings",
-                    icon: "cogs"
-                },*/
+                    link: "#!/settings"
+                },
                 {
                     text: "Profil",
-                    link: "#!/profil",
-                    icon: "user"
+                    link: "#!/profil"
                 },
                 {
                     text: "Admin",
-                    link: "#!/admin",
-                    icon: "lock"
+                    link: "#!/admin"
                 }
             ];
 

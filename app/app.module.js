@@ -16,6 +16,11 @@ app.run(function($rootScope, $state) {
     });
 });
 
+app.run(function(authManager) {
+    console.log('appel de authManager');
+    authManager.checkAuthOnRefresh();
+});
+
 /** TOKEN DANS LE HEADER **/
 app.config(function Config($httpProvider, jwtInterceptorProvider, jwtOptionsProvider) {
     $httpProvider.interceptors.push('authInterceptor');

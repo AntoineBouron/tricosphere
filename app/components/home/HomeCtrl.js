@@ -7,7 +7,7 @@ angular
         $scope.getAllAcounts = function() {
             $http({
                 method: 'GET',
-                url: 'http://localhost/tricosphere/api/index.php' + '/toto'
+                url: confg.api + '/toto'
             }).then(function successCallback(response) {
                 console.log(response);
             }, function errorCallback(response) {

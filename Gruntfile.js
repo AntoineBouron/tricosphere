@@ -5,6 +5,7 @@ module.exports = function(grunt) {
         'app/app.factory.js',
         'app/app.route.js',
         'app/app.directive.js',
+        'app/app.service.js',
         'app/components/**/*.js',
         'app/shared/**/*.js'
     ];

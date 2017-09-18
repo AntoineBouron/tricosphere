@@ -9,16 +9,26 @@
         <ul class="navbar-nav d-flex justify-content-start w100">
             <li class="nav-item active" ng-repeat="item in menuItems">
                 <a class="nav-link" href="{{item.link}}">
-                    <i class="fa fa-{{item.icon}}" aria-hidden="true"></i> {{item.text}}
-                </a>
-            </li>
-            <li class="nav-item dropdown ml-auto">
-                <a class="dropdown-item" ng-click="doDeconnect()">
-                    <i class="fa fa-times" aria-hidden="true"></i> Deconnexion
-                </a>
-            </li>
-        </ul>
-    </div>
+                 {{item.text}}
+             </a>
+         </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mercerie
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#!/merceries/recherche">Rechercher</a>
+              <a class="dropdown-item" href="#">Mes merceries</a>
+              <a class="dropdown-item" href="#">Ma mercerie</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown ml-auto">
+        <button class="dropdown-item" ng-click="doDeconnect()">
+            <i class="fa fa-2x fa-times" aria-hidden="true"></i> <!-- Deconnexion -->
+        </button>
+    </li>
+</ul>
+</div>
 </nav>
 
 <!-- NAVBAR en bas pour les mobiles -->
